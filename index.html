@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <title>WA boot</title>
+  </head>
+  <body>
+      <div class="loading">
+          <img src="image/whatsapp.png" alt="">
+          <div>
+            <p>  By </p>
+            <p>RALDI</p>
+          </div>
+      </div>
+      <div class="whatsapp">
+      <div class="whole-body">
+      <div class="w-header">
+          <div class="sub-header">
+            <div>
+                <span>whatsapp boot</span>
+            </div>
+            <div>
+                <div>
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="drop-show">
+                    <i class="fas fa-ellipsis-v"></i>
+                    <div class="w-drpodown">
+                        <div onclick="errorMsg('Fungsi grup baru dalam proses pengembangan...')">group baru</div>
+                        <div onclick="errorMsg('fungsi siaran langsung akan segera hadir...')">siaran langsung</div>
+                        <div onclick="errorMsg('efek video call whatsapp akan segera hadir...')">efek video call</div>
+                        <div onclick="errorMsg('bisuhkan notifikasi dalam proses pengembangan...')"> bisuhkan notifikasi</div>
+                        <div onclick="errorMsg('bersihkan chat dalam proses pengembangan...')">bersihkan pesan</div>
+                        <div onclick="errorMsg('pengaturan dalam proses pengembangan...')">pengaturan</div>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+      
+      <div class="sub-header-sticky">
+        <div>
+            <i class="fas fa-camera"></i>
+        </div>
+        <div>
+            <div class="chats" onclick="ShowHomechat()">
+                <span>PESAN</span>
+                <div class="header-straw1"></div>
+            </div>
+            <div class="status" onclick="ShowStatus()">
+                <span>STATUS</span>
+                <div class="header-straw2"></div>
+            </div>
+            <div class="calls" onclick="ShowCalls()">
+                <span>PANGGILAN</span>
+                <div class="header-straw3"></div>
+            </div>
+        </div>
+    </div>
+
+        <!-- W-home-chat Body -->
+    <div class="w-chat">
+    </div>
+        <!-- fixed new chat icon  -->
+      <div class="fixed-new-chat">
+        <img src="/image/chat.svg" alt="chat" class="chat-icon">
+      </div>
+    
+      <!-- W-Stroies Body -->
+    <div class="w-stories">
+        <div>
+            <div>
+                <img src="image/fr.jpg" alt="">
+                <i class="fas fa-plus-circle  stories-body"></i>
+            </div>
+            <div class="chat-fr">
+                <span>status saya</span>
+                <span>Ketuk untuk menambahkan pembaruan status</span>
+            </div>
+        </div>
+        <p class="recent-text">status terbaru</p>
+
+        <!-- <div class="stories">
+            <div>
+                <img src="image/fr.jpg" alt="">
+                <i class="fas fa-plus-circle"></i>
+            </div>
+            <div class="chat-fr">
+                <span>Lohia Khanna</span>
+                <span>Today, 10:23 </span>
+            </div>
+        </div>
+        <div class="stories">
+            <div>
+                <img src="image/fr.jpg" alt="">
+                <i class="fas fa-plus-circle"></i>
+            </div>
+            <div class="chat-fr">
+                <span>Arun Kapoor</span>
+                <span>Today, 19:27 </span>
+            </div>
+        </div> -->
+    </div>
+    <!-- fixed bottom icons -->
+        <div class="fixed-status-icon1">
+            <i class="fas fa-camera"></i>
+            <i class="fas fa-pen"></i>
+        </div>
+
+        
+        <!-- W-Calls --> 
+      <div class="w-calls">
+        <!-- <div>
+            <div>
+                <img src="image/fr.jpg" alt="">
+            </div>
+            <div class="chat-fr">
+                <span>Arun Kashyap</span>
+                <span> <i class="fas fa-long-arrow-alt-up"></i> <span> (6) Today, 19:07</span></span>
+            </div>
+            <div class="call-icon">
+                <i class="fas fa-phone"></i>
+            </div>
+        </div> -->
+      </div>
+        <!-- fixed calls bottom icon   -->
+      <div class="fixed-status-icon2">
+        <i class="fas fa-phone"></i>
+        <i class="fas fa-video"></i>
+      </div>
+      </div>
+
+      <!-- w-chat-system -->
+      <div class="chat-page">
+        <!-- W-Chat-Body -->
+    <div class="w-chat-body">
+        <div class="chat-header">
+            <div class="header-left">
+                <i class="fas fa-arrow-left" onclick="backHomechat()"></i>
+                <img src="image/Robot.jpg" alt="">
+                <span>pengembang WA boot<br><span class="onlineText">mengetik...</span></span>
+            </div>
+            <div class="header-right">
+                <i class="fas fa-video" onclick="nonDevelopError('fungsi video belum berfungsi')"></i>
+                <i class="fas fa-phone" onclick="nonDevelopError('fungsi panggilan belum berfungsi')"></i>
+                <div class="chat-dropdown-show">
+                    <i class="fas fa-ellipsis-v"></i>
+                    <div class="chat-dropdown">
+                        <div>info kontak</div>
+                        <div>Media, tautan, dan dokumen</div>
+                        <div>cari</div>
+                        <div> Bisukan Pemberitahuan</div>
+                        <div onclick="wallpaperTheme2()"> Wallpaper</div>
+                        <div class="more-menu"> <span>lagi</span> <i class="fas fa-caret-right"></i>
+                            <div class="more-dropdown">
+                                <div>Laporan</div>
+                                <div>Blok</div>
+                                <div>bersihkan pesan</div>
+                                <div>ekpor chat</div>
+                                <div>Tambahkan Pintasan</div>
+                                <div>komunitas</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-bottom">
+            <div>
+                <textarea placeholder="Tulis pesan mu" oninput="changeIcon()"></textarea>
+            </div>
+            <div>
+                <i class="fas fa-microphone" onclick="nonDevelopError('micnya belum berfungsi, masih dalam tahap pengembangan')"></i>
+                <i class="fas fa-paper-plane" onclick="responseMessage()"></i>
+            </div>
+        </div>
+    </div>
+    <!-- type message icons -->
+    <div class="type-inner-icon">
+        <i class="fas fa-smile" onclick="nonDevelopError('Emoji belum berfungsi, masih dalam tahapan pengembangan oleh developer WA boot')"></i>
+        <div>
+            <i class="fas fa-paperclip" onclick="nonDevelopError('lampiran sedang diproses oleh developer WA boot<')"></i>
+            <i class="fas fa-camera" onclick="nonDevelopError('kamera dalam tahap pengembangan fitur video call group +100 peserta')"></i>
+        </div>
+    </div>
+    <!-- Message Content -->
+    <div class="message-header">
+        <!-- <div class="msg-right">
+            <span> ohh Nice to Meet you! <span><span>15:08</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="16" height="15"><path fill="blue" d="M10.91 3.316l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="16" height="15"><path fill="blue" d="M10.91 3.316l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"></path></svg></span></span>
+        </div> -->
+        <span id="chatBottom"></span>
+    </div>
+</div><!-- End Chat Page -->
+
+    <!-- Wallpaper Theme Page-->
+    <div class="wallpaper-theme">
+        <div class="wallpaper-header">
+            <i class="fas fa-arrow-left" onclick="chatHome()"></i>
+            <span>pilih wallpaper kesukaanmu</span>
+        </div>
+        <div>
+            <div>
+                <img src="https://dl.dropbox.com/s/qoa0pulm1eywiy4/light%20yellow.jpeg" alt="" onclick="themeBright()">
+                <img src="https://dl.dropbox.com/s/nnzxthjp4kb40fa/theme-black.jpeg" alt="">
+            </div>
+            <div class="gallary-text">
+                <span>Terang</span>
+                <span>Gelap</span>
+            </div>
+            <div>
+                <!-- <div class="wallpaperColor"><label for="imageColor"><img src="https://dl.dropbox.com/s/fixvwq62hsw0svo/color.jpg"></label></div> -->
+                <input type="color"  value="#C8FF00" oninput="SolidColor(),confirmAlert()">
+                <img src="https://tidbits.com/uploads/2019/05/black-background-costume-dark-mode-1800x0-c-default.jpg" alt="">
+            </div>
+            <div class="gallary-text1">
+                <span>Warna Solid</span>
+                <span>gunakan fotomu</span>
+            </div>
+        </div>
+        <div class="wallpaper-theme-footer">
+            <i class="far fa-image" onclick="DefaultWallpaper()"> <span>wallpaper bawaan</span></i><br>
+            <i class="fas fa-trash" onclick="RemoveWallpaper()"><span>hapus perubahan wallpaper</span></i>
+        </div>
+    </div>
+    <!-- Wallpaper Theme View Page-->
+     <div class="theme-view">
+        <div class="theme-header">
+            <i class="fas fa-arrow-left" onclick="backtoWallpaperTheme()"></i>
+            <span>Terang</span>
+        </div>
+        <div>
+            <!-- via javascript added images theme -->
+        </div>
+    </div>
+    <!-- message icon -->
+    <span class="confirm-alert">Wallpaper-Berubah</span>
+    </div>
+      <script src="js/index.js"></script>
+  </body>
+</html>
